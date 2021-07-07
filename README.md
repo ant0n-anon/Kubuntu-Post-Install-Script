@@ -1,7 +1,7 @@
 # Kubuntu-Post-Install-Script
 Script for updating Kubuntu after fresh install
 
-This script should make any fresh install on KDE up to date with some important decentralized programs.
+This script should make any fresh install on Kubuntu up to date with some important decentralized programs.
 
 This will try to activate expressvpn.
 
