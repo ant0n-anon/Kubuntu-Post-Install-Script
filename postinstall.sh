@@ -4,10 +4,15 @@
 # Remove any software that you don't want after forking
 # This is literally my first project ever, so please support
 
+#!/bin/bash
+
+# For running after fresh install of KDE Neon 5.22.2
+# Remove any software that you don't want after forking
+# This is literally my first project ever, so please support!
+
 # General Update
 
 sudo apt-get update 
-sudo apt-get upgrade
 sudo apt install curl
 
 # Install Software
@@ -34,6 +39,10 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt-get update 
 sudo apt-get install spotify-client
 
+# Install Chrome
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 # Install Snap installer
 sudo apt-get install snapd
 sudo snap install core
@@ -42,6 +51,7 @@ sudo snap install core
 sudo apt install python3-pip
 
 # Install System Monitor
+sudo apt install python3-pip
 sudo pip3 install bpytop
 
 # Install VLC
@@ -61,6 +71,11 @@ sudo dpkg -i exodus-linux-x64-21.7.2.deb
 sudo expressvpn activate
 sudo expressvpn protocol lightway_udp
 sudo expressvpn connect
+sudo expressvpn autoconnect true
+
+# Allow KDE Connect ports to bypass firewall
+sudo ufw allow 1714:1764/tcp
+sudo ufw allow 1714:1764/udp
 
 # Enable Firewall
 sudo ufw enable
