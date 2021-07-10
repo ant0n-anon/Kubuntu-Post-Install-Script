@@ -4,12 +4,6 @@
 # Remove any software that you don't want after forking
 # This is literally my first project ever, so please support
 
-#!/bin/bash
-
-# For running after fresh install of KDE Neon 5.22.2
-# Remove any software that you don't want after forking
-# This is literally my first project ever, so please support!
-
 # General Update
 
 sudo apt-get update 
